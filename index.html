@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prospera</title>
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="images/favicon.svg">
+</head>
+
+<body>
+  <h1 class="counter">0</h1>
+ <div class="line-container"><div class="line"><h1 class="welcome">Welcome</h1></div></div> 
+	
+<div class="overlay">
+  <div class="bar"></div> 
+</div> <!---->
+<div class="header">
+  <nav>
+    <div> <a id="name" href="#"><img src="images/logo.svg"></a> </div>
+	  
+	  <label for="menu-toggle"><img src="images/hamburger.svg"></label>
+						
+					<input type="checkbox" id="menu-toggle"/>
+	  
+	  
+    <div class="nav"> <a href="#">Who We Are</a> <a href="#">Our Approach</a> <a href="#">Our Trainings</a> <a href="#">Contact</a></div>
+  </nav>
+</div>
+<section id="one">
+  <div class="container">
+    <div><a id="scroll" href="#two"><div class="circle"><div class="long-arrow-down"></div></div> </a></div>
+    <div>
+		<div><div class="title-container"> <h1 class="title">Creating business</h1> </div> <div class="title-container"><h1 class="title"><em>opportunities</em></h1></div></div>
+		<p id="intro">We are a Philippine-based non-profit organization dedicated to providing aspiring entrepreneurs with the necessary livelihood skills to succeed in their business endeavors.</p>
+		
+    </div>
+  </div>
+</section>
+<section id="two">
+  <div class="container">
+	  <h3 class="two-sub">Our recent trainings</h3>
+	  <ul>
+		  <li class="li-01"><a href="#two">Meat Processing</a></li><div><img id="img-01" src="images/meat-01.jpg">
+		  <img id="img-02" src="images/meat-02.jpg"><img id="img-03" src="images/meat-03.jpg"></div>
+		  <li class="li-02"><a href="#two">Onion Processing</a></li><div><img id="img-04" src="images/onion-01.jpg">
+		  <img id="img-05" src="images/onion-02.jpg"><img id="img-06" src="images/onion-03.jpg"></div>
+		  <li class="li-03"><a href="#wo">Veggie Noodle &amp; Chips Processing</a></li><div><img id="img-07" src="images/veggie-01.jpg">
+		  <img id="img-08" src="images/veggie-02.jpg"><img id="img-09" src="images/veggie-03.jpg"></div></ul>
+	  
+ 
+			  <div class="button"><a class="link" href="#">SEE MORE</a></div>
+
+	</div>
+</section>
+	
+	<section id="three">
+  <div class="container">
+	  <div>
+		  <div>
+		  <div class="three-con"><h2 class="three-sub">Building <em>sustainable</em></h2></div>
+		  <div class="three-con"><h2 class="three-sub">livelihoods</h2> </div>
+			  </div>
+		  <div>
+		  <p class="p02 wow fadeInUp">We provide livelihood skills training and mentorship programs in barangays primarily around Luzon. Join us in creating a community of successful and resilient business owners.</p>
+		  <div class="buttons wow fadeInUp">
+			  <a class="link" href="#">
+			  <div class="button">WHO WE ARE</div></a>
+			  
+			  <a class="link" href="#"><div class="button">OUR APPROACH</div></a></div></div>
+
+	  </div>
+		<div class="images">
+			<img class="pic" src="images/a.jpg">
+			<img class="pic" src="images/b.jpg">
+						<img class="pic" src="images/c.jpg">
+			<img class="pic" src="images/d.jpg">
+			<img class="pic" src="images/e.jpg">
+						<img class="pic" src="images/f.jpg">
+			<img class="pic" src="images/g.jpg">
+			<img class="pic" src="images/h.jpg">
+						<img class="pic" src="images/i.jpg">
+			
+	  </div>
+		
+		</div>
+</section>
+	
+	<section id="four">
+  <div class="container">
+<div class="credits"><div class="socials"><a href="#"><img src="images/fb.svg"></a><a href="#"><img src="images/ig.svg"></a></div> <small>Photos by Krizia Anne Dela Cruz &amp; Hanson Jiego Calibuso</small>
+	<small>Copyright © 2023 ANR. All Rights Reserved.</small></div>
+	  <div></div>
+	  <div class="second">	 <div class="connect"> <div class="four-con"> <a href="#"><h2 class="four-sub">Connect with us <div class="long-arrow-div"><div class="long-arrow-right"></div></div></h2></a></div>
+		 
+
+		  
+	  </div>
+<div class="last-img"> <img src="images/four-bg.jpg"></div></div>
+	</div>
+</section>
+
+<!---------- JS ---------------> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script> 
+<script src="js/gsap.js"></script> 
+<script>
+	function splitTextIntoSpans(selector) {
+    var element = document.querySelector(selector);
+    if (element) {
+        var text = element.innerText;
+        var splitText = text
+            .split("")
+            .map((char) => `<span>${char}</span`)
+            .join("");
+        element.innerHTML = splitText;
+    }
+}
+
+function startLoader() {
+    var counterElement = document.querySelector(".counter");
+   
+    var currentValue = 0;
+
+    function updateCounter() {
+        if (currentValue === 100) {
+            animateText();
+            return;
+        }
+
+        currentValue += Math.floor(Math.random() * 10) + 1;
+        currentValue = currentValue > 100 ? 100 : currentValue;
+        counterElement.innerHTML =
+            currentValue
+                .toString()
+                .split("")
+                .map((char) => `<span>${char}</span`)
+
+
+            var delay = Math.floor(Math.random() * 200) + 100;
+            setTimeout(updateCounter, delay);
+    }
+		
+		updateCounter();
+		
+			
+	}
+		
+		startLoader();
+
+	
+	</script> 
+<script type="text/javascript" src="js/https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/wow.min.js"></script> 
+<script>
+	wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+	</script> 
+
+</body>
+</html>
